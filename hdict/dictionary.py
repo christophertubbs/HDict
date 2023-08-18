@@ -72,7 +72,7 @@ class HDict(typing.Dict[_KT, _VT]):
         self,
         *args,
         values: typing.Mapping[_KT, _VT] = None,
-        factory: typing.Callable[[], _VT] = None,
+        factory: typing.Union[typing.Callable[[], _VT], typing.Type] = None,
         **kwargs
     ):
         """
